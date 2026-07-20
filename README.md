@@ -2,7 +2,8 @@
 
 > Landing page institucional premium, elegante e de alta performance desenvolvida sob medida para o nicho de medicina personalizada e nutrologia.
 
-Este projeto foi estruturado com foco em conversão e experiência do usuário (UX), ideal para profissionais de saúde que buscam um posicionamento digital exclusivo no mercado particular.
+🔗 **[Clique aqui para acessar o site em produção](https://riollymikael.github.io/landingpage-medica/)**
+
 
 ---
 
