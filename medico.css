@@ -1,0 +1,395 @@
+/* RESET E CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --bg-page-white: #ffffff;         /* Fundo de página totalmente Branco Puro */
+    --bg-card-gray: #f1f5f9;          /* Cinza destacado para os quadrados de destaque */
+    --text-main: #0f172a;
+    --text-muted: #475569;
+    --unimed-green: #006643;          /* Verde Forte Institucional */
+    --unimed-dark: #004d32;
+    --unimed-soft: #e6f3ed;
+    
+    /* Linha mais fina (2px) com o VERDE FORTE marcante */
+    --border-section: 2px solid #006643 !important; 
+    
+    --border-card: 1px solid #cbd5e1;
+    --shadow-premium: 0 10px 25px rgba(15, 23, 42, 0.03);
+    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body {
+    background-color: var(--bg-page-white);
+    color: var(--text-main);
+    line-height: 1.7;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 10%;
+    background: var(--bg-page-white);
+    border-bottom: var(--border-section); 
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center; 
+    gap: 10px; /* Espaço exato entre o ícone médico e o nome */
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--unimed-green);
+    letter-spacing: -0.5px;
+}
+
+.navbar .logo i {
+    font-size: 1.35rem; /* Ajuste sutil de tamanho do ícone médico */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    margin-right: 32px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--unimed-green);
+}
+
+.btn-nav {
+    background: var(--unimed-green);
+    color: #ffffff;
+    padding: 10px 24px;
+    border-radius: 99px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+/* SEÇÃO 1: HERO (PÁGINA 1 - FUNDO BRANCO) */
+.hero {
+    background: var(--bg-page-white) !important;
+    padding: 120px 10%;
+    border-bottom: var(--border-section); 
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    flex: 1.1;
+}
+
+.tag {
+    background: var(--unimed-soft);
+    color: var(--unimed-green);
+    padding: 6px 16px;
+    border-radius: 99px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 24px;
+}
+
+.hero-text h1 {
+    font-size: 3.4rem;
+    color: var(--text-main);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+    margin-bottom: 24px;
+}
+
+.hero-text p {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+}
+
+.btn-cta {
+    background: var(--unimed-green);
+    color: #ffffff;
+    padding: 18px 38px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 99px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    transition: var(--transition);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+    border-radius: 32px;
+}
+
+/* SEÇÃO 2: DIFERENCIAIS (PÁGINA 2 - FUNDO BRANCO + QUADRADOS CINZAS DESTACADOS) */
+.diferenciais {
+    padding: 140px 10%;
+    background: var(--bg-page-white) !important;
+    border-bottom: var(--border-section); 
+}
+
+.diferenciais h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-main);
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.section-subtitle {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.grid-diferenciais {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.card {
+    background: var(--bg-card-gray) !important; 
+    padding: 56px 40px;
+    border-radius: 24px;
+    border: var(--border-card);
+    box-shadow: var(--shadow-premium);
+    transition: var(--transition);
+}
+
+.card:hover {
+    border-color: var(--unimed-green);
+    transform: translateY(-6px);
+}
+
+.card i {
+    font-size: 2.4rem;
+    color: var(--unimed-green);
+    margin-bottom: 28px;
+    display: inline-block;
+}
+
+.card h3 {
+    color: var(--text-main);
+    margin-bottom: 16px;
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+/* SEÇÃO 3: SOBRE O MÉDICO (PÁGINA 3) */
+.sobre {
+    background: var(--unimed-green) !important;
+    color: #ffffff;
+    padding: 140px 10%;
+    border-bottom: var(--border-section); 
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.sobre-image img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.sobre-text h3 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.badges {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.badges span {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 12px 24px;
+    border-radius: 99px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* SEÇÃO 4: ESPECIALIDADES (PÁGINA 4 - FUNDO BRANCO + QUADRADOS CINZAS DESTACADOS) */
+.especialidades {
+    padding: 140px 10%;
+    background: var(--bg-page-white) !important;
+    border-bottom: var(--border-section); 
+}
+
+.especialidades h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-main);
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.grid-especialidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.esp-item {
+    background: var(--bg-card-gray) !important; 
+    padding: 56px 40px;
+    border-radius: 24px;
+    border: var(--border-card);
+    box-shadow: var(--shadow-premium);
+    transition: var(--transition);
+}
+
+.esp-item:hover {
+    border-color: var(--unimed-green);
+    transform: translateY(-6px);
+}
+
+.esp-item .num {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--unimed-green);
+    background: var(--unimed-soft);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 99px;
+    margin-bottom: 28px;
+}
+
+/* SEÇÃO 5: DEPOIMENTOS (PÁGINA 5 - FUNDO BRANCO + QUADRADOS CINZAS DESTACADOS) */
+.depoimentos {
+    background: var(--bg-page-white) !important;
+    padding: 140px 10%;
+    border-bottom: var(--border-section); 
+}
+
+.depoimentos h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.grid-depoimentos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.depoimento-card {
+    background: var(--bg-card-gray) !important; 
+    padding: 48px;
+    border-radius: 24px;
+    border: var(--border-card);
+    box-shadow: var(--shadow-premium);
+}
+
+.stars {
+    margin-bottom: 20px;
+    color: #eab308;
+}
+
+/* CTA FINAL (PÁGINA 6) */
+.cta-final {
+    padding: 140px 10%;
+    text-align: center;
+    background: var(--bg-page-white) !important;
+    border-bottom: var(--border-section); 
+}
+
+.cta-final h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.cta-final p {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* FOOTER / RODA PÉ */
+footer {
+    background: var(--unimed-green) !important; 
+    color: #f1f5f9; 
+    padding: 80px 10% 40px 10%;
+    text-align: center;
+    border-top: 4px solid var(--unimed-dark) !important; 
+    opacity: 1 !important; 
+}
+
+footer strong {
+    color: #ffffff;
+}
+
+.legal {
+    font-size: 0.8rem;
+    margin-top: 24px;
+    color: #e2e8f0; 
+}
+
+.copy {
+    margin-top: 60px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 30px;
+    color: #f1f5f9;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+    .hero-container, .sobre-container { flex-direction: column; text-align: center; }
+    .grid-diferenciais, .grid-especialidades, .grid-depoimentos { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
+    .badges { justify-content: center; }
+}
