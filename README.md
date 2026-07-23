@@ -1,31 +1,55 @@
-# 🩺 Landing Page Médica - Dra. Camila Rosa
+# 👩‍⚕️ Dra. Camila Rosa — Landing Page Médica
 
-> Landing page institucional premium, elegante e de alta performance desenvolvida sob medida para o nicho de medicina personalizada e nutrologia.
+<div align="center">
 
-🔗 **[Clique aqui para acessar o site em produção](https://riollymikael.github.io/landingpage-medica/)**
+  <!-- IMAGEM DE PREVIEW -->
+  <img src="images/preview.png" alt="Prévia da Landing Page Dra. Camila Rosa" width="100%">
 
+  <br><br>
+
+  <!-- BOTÕES DE ACESSO RÁPIDO -->
+  <a href="https://riollymikael.github.io/landpage-medica/">
+    <img src="https://img.shields.io/badge/🌐_Acessar_Demo_Online-2563eb?style=for-the-badge" alt="Demo Online">
+  </a>
+  <a href="https://github.com/riollymikael/landpage-medica">
+    <img src="https://img.shields.io/badge/💻_Código_Fonte-100000?style=for-the-badge&logo=github" alt="Código Fonte">
+  </a>
+  <img src="https://img.shields.io/badge/📱_100%25_Responsivo-22c55e?style=for-the-badge" alt="Responsivo">
+
+</div>
 
 ---
 
-## ✨ Características do Projeto
+## 📌 Sobre o Projeto
 
-- **Design Premium**: Estética limpa (clean) focada na identidade institucional, utilizando paleta de cores equilibrada.
-- **Estrutura de Conversão**: Seções estrategicamente desenhadas para direcionamento direto ao agendamento via WhatsApp.
-- **Navegação Inteligente**: Menu fixo (*sticky navbar*) e transições suaves de rolagem.
-- **Blocos de Destaque**: Layout segmentado por páginas bem definidas visualmente, garantindo legibilidade e alto contraste.
-- **Responsividade Total**: Totalmente adaptado e testado para funcionamento impecável em dispositivos móveis e desktops.
+Uma landing page médica de alta conversão, elegante e 100% responsiva, desenvolvida para a **Dra. Camila Rosa**. O projeto foi estruturado para passar autoridade, confiança e facilitar o agendamento de consultas médicas e procedimentos.
+
+### ✨ Diferenciais do Layout:
+* 🩺 **Hero Section:** Chamada para ação (CTA) estratégica focada em agendamentos de consulta.
+* 👩‍⚕️ **Sobre a Médica:** Apresentação profissional, qualificações e trajetória.
+* 🏥 **Especialidades & Tratamentos:** Organização clara dos serviços médicos oferecidos.
+* 💬 **Depoimentos de Pacientes:** Prova social para maior credibilidade e humanização.
+* 📱 **Design 100% Responsivo:** Perfeita adaptabilidade para smartphones, tablets e computadores.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **HTML5**: Estruturação semântica do conteúdo.
-- **CSS3**: Estilização moderna através de variáveis (Custom Properties), layout em Grid e Flexbox.
-- **Font Awesome**: Ícones premium integrados.
-- **Inter Font**: Tipografia limpa e de fácil leitura via fontes de sistema.
+* **HTML5:** Estruturação semântica e acessível.
+* **CSS3:** Estilização moderna com Flexbox e animações fluidas.
 
 ---
 
-## 👤 Desenvolvedor
+## 📂 Estrutura do Repositório
 
-Projeto criado por **Riolly Mikael**.
+```text
+landpage-medica/
+│
+├── images/              # Imagens do site e preview
+│   ├── medico.jpg
+│   ├── preview.png
+│   └── sobre-medico.jpg
+│
+├── README.md            # Documentação do repositório
+├── index.html           # Página principal
+└── medico.css           # Estilos globais
