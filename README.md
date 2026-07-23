@@ -1,3 +1,9 @@
+## 👨‍💻 Autor
+
+Desenvolvido por **Riolly Mikael**.
+
+* **GitHub:** [@riollymikael](https://github.com/riollymikael)
+  
 # 👩‍⚕️ Dra. Camila Rosa — Landing Page Médica
 
 <div align="center">
